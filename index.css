@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    padding-top: 50px;
+/*     margin-top: 50px; */
     /* background-image: linear-gradient(135deg, var(--color-1) , var(--color-2)); */
     background-color: #dcedc1;
     font-family: 'Roboto', sans-serif;
