@@ -14,6 +14,8 @@ const rollBtn = document.getElementById("rollBtn")
 const resetBtn = document.getElementById("resetBtn")
 const rules = document.getElementById("rules")
 const body = document.body
+const scoreword1 = document.querySelector(".scoreone")
+const scoreword2 = document.querySelector(".scoretwo")
 
 function showResetButton() {
     rollBtn.style.display = "none"
@@ -48,6 +50,7 @@ function showResetButton() {
         player1Scoreboard.classList.add("big")
         player1Dice.classList.add("big-dice", "active")   
         player2Dice.classList.remove("active")             
+        scoreword1.classList.add("big")
         console.log(player1Dice)    
         showResetButton()
     }  else if (player2Score >= 20) {
@@ -55,6 +58,7 @@ function showResetButton() {
         player2Scoreboard.classList.add("big")    
         player2Dice.classList.add("big-dice", "active")            
         player1Dice.classList.remove("active")             
+        scoreword2.classList.add("big")
         console.log(player2Dice)    
         showResetButton()
     }
@@ -83,5 +87,7 @@ function reset() {
     player1Dice.classList.remove("big-dice")    
     player1Dice.classList.add("active")
     background.classList.remove("fun")
+    scoreword1.classList.remove("big")
+    scoreword2.classList.remove("big")
     body.classList.remove("bodyfun")           
 }
